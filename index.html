@@ -6,8 +6,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="assets/css/customScrollbar.css" />
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://materialdesignicons.com/cdn/2.0.46/css/materialdesignicons.min.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet" />
 </head>
 <body>
@@ -15,7 +15,7 @@
      <div class="aside-menu-wrapper sidebar-bg">
             <ul>
                     <li><a href="JavaScript:Void(0);" class="menu__link "><img src="assets/images/profile.png" class="border-round"></a></a></li>
-                    <li><a href="javascript:void(0);" class="menu__link "><i class="menu__link-icon fa fa-bars"></i></a></li>
+                    <li><a href="javascript:void(0);" class="menu__link "><span class="menu__link-icon mdi mdi-menu"></span></a></li>
                     <li><a href="javascript:void(0);" class="menu__link "><i class="menu__link-icon fa fa-dashboard"></i></a></li>
                     <li><a href="javascript:void(0);" class="menu__link "><i class="menu__link-icon fa fa-line-chart"></i></a></li>
                     <li><a href="javascript:void(0);" class="menu__link "><i class="menu__link-icon fa fa-comment-o"></i></a></li>
@@ -39,9 +39,9 @@
         <div class="grid-bg">
             <div class="right-sidebar">
                 <div class="">
-                    <a href="#" class="primary-light"><i class="fa fa-filter"></i></a>
-                    <a href="#" class="primary-light"><i class="fa fa-history"></i></a>
-                    <a href="#" class="primary-light"><i class="fa fa-save"></i></a>
+                    <a href="#" class="primary-light"><i class="mdi mdi-filter-outline"></i></a>
+                    <a href="#" class="primary-light"><i class="mdi mdi-history"></i></a>
+                    <a href="#" class="primary-light"><i class="mdi mdi-content-save"></i></a>
                 </div>
             </div>
           <div class="width-95">
@@ -65,7 +65,7 @@
                         </div>
                         <div class="col-sm-6 text-right">
                             <span class="date primary-light">27-06-2018</span>
-                            <button class="btn btn-white btn-w-info">Info &nbsp; <img src="assets/images/info_icon_b.png" width="20px"></button>
+                            <button class="btn btn-white btn-w-info text-bold font-size-12">info &nbsp; <img src="assets/images/info_icon_b.png" width="20px"></button>
                         </div>
                     </div>
                   </div>
@@ -108,7 +108,7 @@
                         <span class="primary-color font-size-12 pdd-lt-10 pdd-bt-7">Breda</span>
                     </div>
                     <div class="col-md-4">
-                        <span class="text-muted font-size-12 width-33 text-right pdd-bt-7">Visit date:: </span>
+                        <span class="text-muted font-size-12 width-33 text-right pdd-bt-7">Visit date: </span>
                         <span class="primary-color font-size-12 pdd-lt-10 pdd-bt-7">-</span>
                     </div>                    
                     <div class="col-md-4">
@@ -132,11 +132,20 @@
                         <span class="primary-color font-size-12 pdd-lt-10 pdd-bt-7">-</span>
                     </div>
                     <div class="col-md-4">
-                        <span class="text-muted font-size-12 width-33 text-right pdd-bt-7">Pre Prep:</span>
-                        <span class="primary-color font-size-12 pdd-lt-10 pdd-bt-7">-</span>
-                    </div>
+                            <span class="text-muted font-size-12 width-33 text-right pdd-bt-7">Pre Prep:</span>
+                            <span class="primary-color font-size-12 pdd-lt-10 pdd-bt-7">-</span>
+                        </div>
+                        <div class="col-md-4">
+                                <span class="text-muted font-size-12 width-33 text-right pdd-bt-7">Engineer: </span>
+                                <span class="primary-color font-size-12 pdd-lt-10 pdd-bt-7">Aron Piekema</span>
+                            </div>
+                            <div class="col-md-4">
+                                    <span class="text-muted font-size-12 width-33 text-right pdd-bt-7">Warranty:</span>
+                                    <span class="primary-color font-size-12 pdd-lt-10 pdd-bt-7">Yes</span>
+                                </div>
                 </div>
                 <div class="tag-box">
+                    <div class="text-muted font-size-12 pdd-top-10 pdd-btm-5 pdd-lt-10">Classification labels</div>
                     <ul>
                         <li class="tag-button tag-green-bg">Ontzorgen</li>
                         <li class="tag-button tag-green-bg">Samenwerking</li>
@@ -150,20 +159,20 @@
                     <div class="col-sm-6">
                         <div class="row">
                             <div class="col-sm-2 col-md-1 text-center">
-                                <span class="smily_icon"><i class="fa fa-smile-o green-color"></i></span>
+                                <span class="smily_icon"><i class="mdi mdi-emoticon green-color"></i></span>
                             </div>
                             <div class="col-sm-7 col-md-9">
                                 <p>Onze spullen worden altijd goed ontvangen met een snelle afhandeling</p>
                             </div>
                             <div class="col-sm-3 col-md-2 text-right">
-                                    <span class="text-center num green-bg white-color">9</span>
+                                    <span class="text-center num green-bg white-color text-bold">9</span>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-6">
                         <div class="row">
                             <div class="col-sm-2 col-md-1">
-                                    <span class="smily_icon"><i class="fa fa-frown-o red-color"></i></span>
+                                    <span class="smily_icon"><i class="mdi mdi-emoticon-sad red-color"></i></span>
                             </div>
                             <div class="col-sm-10 col-md-11">
                                 <p>Dag,</p>
@@ -171,16 +180,16 @@
                             </div>
                         </div>
                     </div>
-                    <a href="#" class="primary-light-bg collapse_icon"><i class="fa fa-angle-down"></i></a>
+                    <a href="#" class="grid-bg collapse_icon"><i class="fa fa-angle-down"></i></a>
                 </div>
 
                 <div class="tag-entry full-width">
-                    <a href="" class="add_tag font-size-12">+ Add Tag here...</a>
+                    <a href="" class="add_tag font-size-12"><i class="mdi mdi-plus"></i> Add Tag here...</a>
                     <ul>
-                        <li class="tag-button">News Update x</li>
-                        <li class="tag-button">News Update x</li>
-                        <li class="tag-button">News Update x</li>
-                        <li class="tag-button">News Update x</li>
+                        <li class="tag-button">News update <i class="mdi mdi-close"></i></li>
+                        <li class="tag-button">MT-overleg <i class="mdi mdi-close"></i></li>
+                        <li class="tag-button">News update <i class="mdi mdi-close"></i></li>
+                        <li class="tag-button">MT-overleg <i class="mdi mdi-close"></i></li>
                     </ul>
                 </div>
             </div>
@@ -220,11 +229,11 @@
                                 <p class="textarea-head primary-color text-bold">Notitie Bas:</p>
                           <textarea class="form-control" rows="5" id="comment" name="text" placeholder="Write a comment"></textarea>
                         </div>
-                        <button type="" class="btn btn-large pos-rel"><i class="fa fa-close"></i> <span class="text-bold">Exclude</span></button>
-                        <button type="" class="btn btn-large"><i class="fa fa-th-large" aria-hidden="true"></i> <span class="text-bold">Assign</span></button>
-                        <button type="" class="btn btn-large"><i class="fa fa-paper-plane" aria-hidden="true"></i> <span class="text-bold">Forward</span></button>
-                        <button type="" class="btn btn-white pull-right last"><i class="fa fa-angle-right last" aria-hidden="true"></i> <span class="text-bold">Next</span></button>
-                        <button type="" class="btn btn-white pull-right"><i class="fa fa-angle-left" aria-hidden="true"></i> <span class="text-bold">Previous</span></button>
+                        <button type="" class="btn btn-large pos-rel"><i class="mdi mdi-close"></i> <span class="text-bold">Exclude</span></button>
+                        <button type="" class="btn btn-large"><i class="mdi mdi-step-forward" aria-hidden="true"></i> <span class="text-bold">Forward</span></button>
+                        <button type="" class="btn btn-large"><i class="mdi mdi-content-paste" aria-hidden="true"></i> <span class="text-bold">Assign</span></button>
+                        <button type="" class="btn btn-white pull-right last"><i class="mdi mdi-chevron-right last" aria-hidden="true"></i> <span class="text-bold">Next</span></button>
+                        <button type="" class="btn btn-white pull-right"><i class="mdi mdi-chevron-left" aria-hidden="true"></i> <span class="text-bold">Previous</span></button>
                       </form>
             </div>
 

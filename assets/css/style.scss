@@ -62,6 +62,8 @@ p {
 .full-width{float:left;width:100%;}
 .pdd-lt-10{padding-left:10px;}
 .pdd-bt-7{padding-bottom:7px;}
+.pdd-top-10{padding-top:10px;}
+.pdd-btm-5{padding-bottom:5px;}
 .border-round{border-radius:50%;}
 .orange-border{border:1px solid $orange-color;}
 
@@ -81,9 +83,9 @@ p {
 
         li:first-child
         {
-            border-bottom: 1px solid #a8a8a8;
-            padding-bottom: 20px;
-            margin-top: 20px;
+          border-bottom: 1px solid #a8a8a8;
+          padding-bottom: 20px;
+          margin:20px 0;
         }
     }
     .menu__link-icon
@@ -122,9 +124,9 @@ p {
   .assign-grid{border-left:5px solid $orange-color;float: left;width: 100%;padding: 10px; margin: 0 0 10px 0;font-size:12px;}
   .post-grid{border-left:5px solid $green-color;float: left;width: 100%;padding: 10px; margin: 0 0 10px 0;background: $texwhite;border-top-right-radius: 5px;border-bottom-right-radius: 5px;}
   .muted-text{color:$mutedtext};
-  .title-bar{ border-bottom:1px solid #e2f3f9; float:left;width:100%;padding: 5px 0 10px 0;margin: 0 0 5px;}
+  .title-bar{ border-bottom:1px solid #e2f3f9; float:left;width:100%;padding: 5px 0 10px 0;margin: 0 0 5px;font-size:12px;}
   .post-content{font-size:12px;padding:0 15px; text-align: justify;}
-  .width-95{width:94%;}
+  .width-95{width:93%;}
   .com-head{font-size: 16px;color: #1c3858;margin: 20px 0 20px; padding:0 10px;}
   .breadcrumb{background: #fff;}
 
@@ -169,7 +171,7 @@ p {
   float:left;
   width:100%;
     .btn {margin-right:15px;position: relative;
-        i{position: absolute;left: 30px;top: 17px;}
+        i{position: absolute;left: 30px;top: 12px;}
         i.last{right: 30px;left:auto}} 
         .btn.last{
             margin-right: 0;
@@ -196,13 +198,13 @@ p {
     position: fixed;
     right: 10px;
     width: 50px;
-    top: 95px;
+    top: 125px;
    
   a {
       display: block;
       text-align: center;
       font-size: 25px;
-      margin-bottom: 30px;
+      margin-bottom: 50px;
 
       :hover
       {
@@ -247,7 +249,7 @@ p {
       i{font-weight:600;}
     }
     .num {
-        font-size: 21px;
+        font-size: 18px;
         padding: 15px;
         display: inline-block;
         width: 48px;
@@ -273,7 +275,7 @@ p {
   {
     border: 1px dashed $primary-color;
     background: #fff;
-    padding: 7px 16px;
+    padding: 7px 25px;
     color: $primary-color;
     float: left;
   }
@@ -302,7 +304,7 @@ p {
     ul {
       display: inline-block;
       margin-bottom: 0;
-      padding-left: 10px;
+      padding-left: 0;
     }
     li{
       float: left;
@@ -310,3 +312,4 @@ p {
   .tag-button.tag-red-bg{background:$tag-red-bg;}
   .tag-button.tag-green-bg{background:$tag-green-bg;}
   
+  }

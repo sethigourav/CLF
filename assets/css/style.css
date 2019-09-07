@@ -88,6 +88,14 @@ p {
   padding-bottom: 7px;
 }
 
+.pdd-top-10 {
+  padding-top: 10px;
+}
+
+.pdd-btm-5 {
+  padding-bottom: 5px;
+}
+
 .border-round {
   border-radius: 50%;
 }
@@ -125,7 +133,7 @@ p {
 .aside-menu-wrapper ul li:first-child {
   border-bottom: 1px solid #a8a8a8;
   padding-bottom: 20px;
-  margin-top: 20px;
+  margin: 20px 0;
 }
 
 .aside-menu-wrapper .menu__link-icon {
@@ -193,6 +201,7 @@ p {
   width: 100%;
   padding: 5px 0 10px 0;
   margin: 0 0 5px;
+  font-size: 12px;
 }
 
 .post-content {
@@ -202,7 +211,7 @@ p {
 }
 
 .width-95 {
-  width: 94%;
+  width: 93%;
 }
 
 .com-head {
@@ -282,7 +291,7 @@ p {
 .comment-box-wrapper .btn i {
   position: absolute;
   left: 30px;
-  top: 17px;
+  top: 12px;
 }
 
 .comment-box-wrapper .btn i.last {
@@ -320,14 +329,14 @@ p {
   position: fixed;
   right: 10px;
   width: 50px;
-  top: 95px;
+  top: 125px;
 }
 
 .right-sidebar a {
   display: block;
   text-align: center;
   font-size: 25px;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 .right-sidebar a :hover {
@@ -378,7 +387,7 @@ p {
 }
 
 .top_section .comment-area .num {
-  font-size: 21px;
+  font-size: 18px;
   padding: 15px;
   display: inline-block;
   width: 48px;
@@ -404,7 +413,7 @@ p {
 .add_tag {
   border: 1px dashed #40b1d9;
   background: #fff;
-  padding: 7px 16px;
+  padding: 7px 25px;
   color: #40b1d9;
   float: left;
 }
@@ -431,7 +440,7 @@ p {
 .tag-box ul {
   display: inline-block;
   margin-bottom: 0;
-  padding-left: 10px;
+  padding-left: 0;
 }
 
 .tag-box li {
