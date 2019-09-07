@@ -2,6 +2,7 @@
 $font:'Poppins', sans-serif;
 body {font-family:$font; font-size:13px;line-height:18px;}
 input {outline:none;}
+a:hover{text-decoration: none;}
 ul {list-style: none}
 $primary-color: #40b1d9;
 $primary-light:#c1e5f3;
@@ -16,8 +17,11 @@ $mutedtext: rgba(35,40,43,0.45);
 $texwhite: #fff;
 $orange-color:#ff9222;
 $green-color: #99cc82;
+$gray-bg:#8e9cab;
 $primary-text-color:#1c3858;
 $font-size-13:13px;
+$tag-red-bg:#eb655f;
+$tag-green-bg:#98cb80;
 p {
   font-size:$font-size-13;
   color:$primary-text-color;
@@ -51,10 +55,13 @@ p {
 .lh-50{
   line-height: 50px;
 }
+.width-33 {width:30%;float: left;}
 .primary-color {color: $primary-color;}
 .font-size-12{font-size:12px;}
 .text-bold{font-weight:bold;}
 .full-width{float:left;width:100%;}
+.pdd-lt-10{padding-left:10px;}
+.pdd-bt-7{padding-bottom:7px;}
 .border-round{border-radius:50%;}
 .orange-border{border:1px solid $orange-color;}
 
@@ -112,13 +119,13 @@ p {
     font-weight: lighter;
   }
 
-  .assign-grid{border-left:5px solid $orange-color;float: left;width: 100%;padding: 10px; margin: 0 0 10px 0;}
+  .assign-grid{border-left:5px solid $orange-color;float: left;width: 100%;padding: 10px; margin: 0 0 10px 0;font-size:12px;}
   .post-grid{border-left:5px solid $green-color;float: left;width: 100%;padding: 10px; margin: 0 0 10px 0;background: $texwhite;border-top-right-radius: 5px;border-bottom-right-radius: 5px;}
   .muted-text{color:$mutedtext};
   .title-bar{ border-bottom:1px solid #e2f3f9; float:left;width:100%;padding: 5px 0 10px 0;margin: 0 0 5px;}
   .post-content{font-size:12px;padding:0 15px; text-align: justify;}
   .width-95{width:94%;}
-  .com-head{font-size: 16px;color: #1c3858;margin: 30px 0 20px;}
+  .com-head{font-size: 16px;color: #1c3858;margin: 20px 0 20px; padding:0 10px;}
   .breadcrumb{background: #fff;}
 
   @mixin button($padding:10px 50px, $font-size:16px, $border-radius:40px, $bg-color:transparent, $font-color:#40b1d9,$border:1px solid $bg-color) {
@@ -134,7 +141,6 @@ p {
 .btn {
 	@include button;
 }
-
 
 .btn-large {
 	@include button(12px 66px, 16px);
@@ -209,8 +215,6 @@ p {
   padding-top: 20px;
 
   .top-row{
-    padding-bottom: 10px;
-
     h5{
       font-size: 16px;
       font-weight: 600;
@@ -234,6 +238,7 @@ p {
     font-size: 16px;
     font-weight: 300;
     margin-bottom: 20px;
+    margin-top: 10px;
 
     .smily_icon{
       font-size: 30px;
@@ -262,8 +267,46 @@ p {
       border-radius: 50%;
       margin-left: -17px;
     }
+  } }
+
+  .add_tag
+  {
+    border: 1px dashed $primary-color;
+    background: #fff;
+    padding: 7px 16px;
+    color: $primary-color;
+    float: left;
   }
-
-
+  .tag-entry
+  {
+    ul {
+      display: inline-block;
+      margin-bottom: 0;
+      padding-left: 10px;
+    }
+    li{
+      float: left;
+  }
+  }
+.tag-button
+  {
+    background:$gray-bg;
+    padding: 8px;
+    margin: 0 10px;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 12px;
+  }
+  .tag-box
+  {
+    ul {
+      display: inline-block;
+      margin-bottom: 0;
+      padding-left: 10px;
+    }
+    li{
+      float: left;
+  }
+  .tag-button.tag-red-bg{background:$tag-red-bg;}
+  .tag-button.tag-green-bg{background:$tag-green-bg;}
   
-}
