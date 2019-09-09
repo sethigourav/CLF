@@ -26,7 +26,6 @@
         <!-- end:: Aside Menu -->
     <div class="container-fluid">
     <div class="row">
-        
         <div class="head">
                 <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
@@ -65,15 +64,16 @@
                         </div>
                         <div class="col-sm-6 text-right">
                             <span class="date primary-light">27-06-2018</span>
-                            <button class="btn btn-white btn-w-info text-bold font-size-12">info &nbsp; <img src="assets/images/info_icon_b.png" width="20px"></button>
+                            <button class="btn btn-white btn-w-info text-bold font-size-12" id="info-btn">info &nbsp; <i class="mdi mdi-playlist-plus"></i></button>
                         </div>
                     </div>
                   </div>
                 </div>
-                <div class="row">
+                <div id="project-details">
+                <div class="row" >
                     <div class="col-md-4">
                         <span class="text-muted font-size-12 width-33 text-right pdd-bt-7">Project: </span>
-                        <span class="primary-color font-size-12 pdd-lt-10 pdd-bt-7">	Aron Piekema</span>
+                        <span class="primary-color font-size-12 pdd-lt-10 pdd-bt-7">Aron Piekema</span>
                     </div>
                     <div class="col-md-4">
                         <span class="text-muted font-size-12 width-33 text-right pdd-bt-7">Merk: </span>
@@ -154,6 +154,7 @@
                         <li class="tag-button tag-red-bg">Deskundiheid</li>
                     </ul>
                 </div>
+            </div>
 
                 <div class="row white-bg comment-area">
                     <div class="col-sm-6">
@@ -177,6 +178,7 @@
                             <div class="col-sm-10 col-md-11">
                                 <p>Dag,</p>
                                 <p>Ignam, nobisquid utempor recab id mo quasim ilit eum entiustrunt. Lamet aut adi tet eatiam, utaturios preictur, omnis expercit officiet, ut maio beaquam usanturi nonest, explanditi dolupidel is reptati omnia verrum debitatus molupitate voluptum qui cuptatu repudit.</p>
+                                <p class="more-text">Ignam, nobisquid utempor recab id mo quasim ilit eum entiustrunt. Lamet aut adi tet eatiam, utaturios preictur, omnis expercit officiet, ut maio beaquam usanturi nonest, explanditi dolupidel is reptati omnia verrum debitatus molupitate voluptum qui cuptatu repudit.</p>
                             </div>
                         </div>
                     </div>
@@ -230,7 +232,7 @@
                           <textarea class="form-control" rows="5" id="comment" name="text" placeholder="Write a comment"></textarea>
                         </div>
                         <button type="" class="btn btn-large pos-rel"><i class="mdi mdi-close"></i> <span class="text-bold">Exclude</span></button>
-                        <button type="" class="btn btn-large"><i class="mdi mdi-step-forward" aria-hidden="true"></i> <span class="text-bold">Forward</span></button>
+                        <button type="" class="btn btn-large"><i class="mdi mdi-telegram" aria-hidden="true"></i> <span class="text-bold">Forward</span></button>
                         <button type="" class="btn btn-large"><i class="mdi mdi-content-paste" aria-hidden="true"></i> <span class="text-bold">Assign</span></button>
                         <button type="" class="btn btn-white pull-right last"><i class="mdi mdi-chevron-right last" aria-hidden="true"></i> <span class="text-bold">Next</span></button>
                         <button type="" class="btn btn-white pull-right"><i class="mdi mdi-chevron-left" aria-hidden="true"></i> <span class="text-bold">Previous</span></button>
@@ -244,3 +246,19 @@
 </div>        
 </div>
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+        $(document).ready(function(){
+          $("#info-btn").click(function(){
+            $("#project-details").slideToggle();
+            $(this).toggleClass("primary-bg");
+            $('#info-btn i').toggleClass('mdi-playlist-plus').toggleClass('mdi-playlist-minus');
+
+          });
+
+            $(".collapse_icon").click(function(){
+            $(".more-text").slideToggle();
+            $('.collapse_icon i').toggleClass('fa-angle-down').toggleClass('fa-angle-up');
+          });
+        });
+        </script>

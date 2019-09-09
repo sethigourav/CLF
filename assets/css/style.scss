@@ -1,12 +1,31 @@
 ﻿
+/*---------------------------------------------------------------------------
+  Template:CLF
+  Author: Gourav Sethi
+  Version: 1.0.0
+----------------------------------------------------------------------------*/
+
+/*---------------------------------------------------------------------------
+[Table Of Contents]
+
+1. Variable Declaration
+2. General
+3. Common Style
+
+----------------------------------------------------------------------------*/
+
+
+
+/*----------------------------
+--------- 1. Variable Declaration ---------
+----------------------------*/
+
+/**/
 $font:'Poppins', sans-serif;
-body {font-family:$font; font-size:13px;line-height:18px;}
-input {outline:none;}
-a:hover{text-decoration: none;}
-ul {list-style: none}
 $primary-color: #40b1d9;
 $primary-light:#c1e5f3;
 $sidebar-color:#1c3857;
+$light-green-color:#98cb80;
 $success-color: #6cb549;
 $danger-color:#e2231a;
 $dashboard-bg:#ecf7fb;
@@ -22,15 +41,292 @@ $primary-text-color:#1c3858;
 $font-size-13:13px;
 $tag-red-bg:#eb655f;
 $tag-green-bg:#98cb80;
+
+/*----------------------------
+--------- 2. General ---------
+----------------------------*/
+
+body {font-family:$font; font-size:13px;line-height:18px;}
+
+input {outline:none;}
+
+a {  font-family:$font;}
+a:focus,
+a:hover {
+  text-decoration: none;
+}
+a:focus {
+  outline: none;
+}
+ul {list-style: none}
+pre {
+  border-radius: 0px;
+  border-color: #ececec;
+}
 p {
   font-size:$font-size-13;
   color:$primary-text-color;
   line-height: 18px;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family:$font;
+    letter-spacing: 0.5px;
+    font-weight: 700;
+}
+
+.width-33 {width:30%;float: left;}
+.text-bold{font-weight:bold;}
+.full-width{float:left;width:100%;}
+.display-inline
+{
+  display: inline-block;
+}
+
+
+/*---------------------------------
+--------- 3. Common Style ---------
+---------------------------------*/
+/* border-radius */
+
+.border-radius-4 {
+  border-radius: 4px !important;
+}
+
+.border-radius-10 {
+  border-radius: 10px !important;
+}
+
+.border-radius-round {
+  border-radius: 50% !important;
+}
+
+/* Typography */
+.font-size-12{
+  font-size:12px !important;
+}
+
+.font-size-13 {
+  font-size: 13px !important;
+}
+.font-size-14 {
+  font-size: 14px !important;
+}
+
+.font-size-15 {
+  font-size: 15px !important;
+}
+
+.font-size-16 {
+  font-size: 16px !important;
+}
+
+.font-size-17 {
+  font-size: 17px !important;
+}
+
+.font-size-18 {
+  font-size: 18px !important;
+}
+.font-size-20 {
+  font-size: 20px !important;
+}
+
+/*padding*/
+
+.pdd-lt-10{
+  padding-left:10px;
+}
+.pdd-bt-7{
+  padding-bottom:7px;
+}
+
+.pdd-btm-5{
+  padding-bottom:5px;
+}
+.mar-tb-5{
+  margin:5px 0}
+  
+.pdd-top-5 {
+  padding-top: 5px !important;
+}
+
+.pdd-top-10 {
+  padding-top: 10px !important;
+}
+
+.pdd-top-15 {
+  padding-top: 15px !important;
+}
+
+.pdd-top-20 {
+  padding-top: 20px !important;
+}
+
+.pdd-top-25 {
+  padding-top: 25px !important;
+}
+
+.pdd-top-30 {
+  padding-top: 30px !important;
+}
+
+/*Margin*/
+
+.no-mrg {
+  margin: 0 !important;
+}
+
+.no-mrg-top {
+  margin-top: 0 !important;
+}
+
+.no-mrg-btm {
+  margin-bottom: 0 !important;
+}
+
+.no-mrg-right {
+  margin-right: 0 !important;
+}
+
+.no-mrg-left {
+  margin-left: 0 !important;
+}
+
+.no-mrg-vertical {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.no-mrg-horizon {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.margin-5 {
+  margin: 5px !important;
+}
+
+.margin-10 {
+  margin: 10px !important;
+}
+
+.margin-15 {
+  margin: 15px !important;
+}
+
+.margin-20 {
+  margin: 20px !important;
+}
+
+.margin-25 {
+  margin: 25px !important;
+}
+
+.margin-20 {
+  margin: 20px !important;
+}
+
+.margin-25 {
+  margin: 25px !important;
+}
+
+.margin-30 {
+  margin: 30px !important;
+}
+
+
+
+.mrg-horizon-auto {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.mrg-left-auto {
+  margin-left: auto !important;
+}
+
+.mrg-right-auto {
+  margin-right: auto !important;
+}
+
+.mrg-vertical-5 {
+  margin-top: 5px !important;
+  margin-bottom: 5px !important;
+}
+
+.mrg-vertical-10 {
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+}
+.mrg-vertical-20 {
+  margin-top: 20px !important;
+  margin-bottom: 20px !important;
+}
+
+.mrg-btm-5 {
+  margin-bottom: 5px !important;
+}
+
+.mrg-btm-10 {
+  margin-bottom: 10px !important;
+}
+
+.mrg-btm-15 {
+  margin-bottom: 15px !important;
+}
+
+.mrg-btm-20 {
+  margin-bottom: 20px !important;
+}
+
+.mrg-btm-25 {
+  margin-bottom: 25px !important;
+}
+
+.mrg-btm-30 {
+  margin-bottom: 30px !important;
+}
+.mrg-top-5 {
+  margin-top: 5px !important;
+}
+
+.mrg-top-10 {
+  margin-top: 10px !important;
+}
+
+.mrg-top-15 {
+  margin-top: 15px !important;
+}
+
+.mrg-top-20 {
+  margin-top: 20px !important;
+}
+
+.mrg-top-25 {
+  margin-top: 25px !important;
+}
+
+.mrg-top-30 {
+  margin-top: 30px !important;
+}
+
+/*----------------------------
+--------- Text Colors and Backgrounds ---------
+----------------------------*/
+
+.primary-bg{
+  background:$primary-color;
+}
+.primary-color {color: $primary-color;}
+
 .primary-light{
   color: $primary-light;
 }
-
 .primary-light-bg{
   background-color: $primary-light;
 }
@@ -39,6 +335,15 @@ p {
 }
 .green-color{
   color: $success-color;
+}
+
+.light-green-color
+{
+  color:$light-green-color;
+}
+.light-green-bg
+{
+  background:$light-green-color;
 }
 .white-color{
   color: $white-color;
@@ -52,23 +357,22 @@ p {
 .white-bg{
   background-color: $white-color; 
 }
+
+
+
 .lh-50{
   line-height: 50px;
 }
-.width-33 {width:30%;float: left;}
-.primary-color {color: $primary-color;}
-.font-size-12{font-size:12px;}
-.text-bold{font-weight:bold;}
-.full-width{float:left;width:100%;}
-.pdd-lt-10{padding-left:10px;}
-.pdd-bt-7{padding-bottom:7px;}
-.pdd-top-10{padding-top:10px;}
-.pdd-btm-5{padding-bottom:5px;}
+
+
 .border-round{border-radius:50%;}
 .orange-border{border:1px solid $orange-color;}
+.font-size-11{font-size:11px;}
+
 
 .head{padding:17px 0 0 100px;}
 .grid-bg {background:$dashboard-bg;margin-left: 30px;float: left;width: 100%;padding:0 0 10px 70px;}
+.card.m-0 {margin:0}
 .aside-menu-wrapper {
     position: fixed;
     top: 0;
@@ -143,7 +447,7 @@ p {
 .btn {
 	@include button;
 }
-
+.btn.focus, .btn:focus {box-shadow:none;}
 .btn-large {
 	@include button(12px 66px, 16px);
 } 
@@ -160,11 +464,21 @@ p {
     border:1px solid #fff;
 } 
 .btn-w-info {
-  @include button(12px 30px, 16px,40px,#fff,#40b1d9,1px solid #fff);
+  @include button(12px 40px 10px 31px,#fff,#40b1d9,1px solid #fff);
   border:1px solid #fff;
   margin-left: 15px;
 } 
-
+.btn-w-info.primary-bg {
+  background: $primary-color;
+   color:$texwhite;
+   border: 1px solid $primary-color
+}
+#info-btn i
+{
+  position: absolute;
+    font-size: 20px;
+    top: 10px;
+}
 .comment-box-wrapper
 {
   margin:20px 0 10px;
@@ -290,6 +604,10 @@ p {
       float: left;
   }
   }
+  #project-details,.more-text
+  {
+    display: none;
+  }
 .tag-button
   {
     background:$gray-bg;
@@ -297,7 +615,7 @@ p {
     margin: 0 10px;
     color: #fff;
     border-radius: 4px;
-    font-size: 12px;
+    font-size: 11px;
   }
   .tag-box
   {
@@ -313,3 +631,32 @@ p {
   .tag-button.tag-green-bg{background:$tag-green-bg;}
   
   }
+
+  .btn-top i
+  {
+    position: absolute;
+    left:17px;
+  }
+
+  .round-circle
+  {
+    padding: 12px;
+    display: inline-block;
+    width: 47px;
+    font-size: 18px;
+    border-radius: 50%;
+    line-height: 22px;
+  }
+
+  /*----------------------------
+---------  Card ---------
+----------------------------*/
+
+.card-deck .card{
+  border-radius:7px;
+  border:none;
+}
+
+
+
+
