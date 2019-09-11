@@ -369,6 +369,55 @@ h6 {
   line-height: 50px;
 }
 
+/******** Shadow effect *******/
+.shadow_effect {
+  position: relative;
+}
+
+.shadow_effect::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.5)), to(#fff));
+  background: linear-gradient(rgba(255, 255, 255, 0.5), #fff);
+  height: 20px;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.shadow_effect .cmnt_max_height {
+  max-height: 180px;
+  overflow: auto;
+}
+
+.box_shadow_effect {
+  position: relative;
+}
+
+.box_shadow_effect::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.05)), color-stop(rgba(255, 255, 255, 0.5)), to(#fff));
+  background: linear-gradient(rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.5), #fff);
+  height: 70px;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.box_shadow_effect.no_effect::before {
+  display: none;
+}
+
+.box-height {
+  height: 640px;
+  overflow: auto;
+}
+
 .border-round {
   border-radius: 50%;
 }
@@ -387,10 +436,11 @@ h6 {
 
 .grid-bg {
   background: #ecf7fb;
-  margin-left: 30px;
+  /* margin-left: 30px;*/
   float: left;
   width: 100%;
-  padding: 0 0 10px 70px;
+  /* padding:0 0 10px 70px; */
+  padding-bottom: 10px;
 }
 
 .card.m-0 {
@@ -487,8 +537,11 @@ h6 {
 
 .post-content {
   font-size: 12px;
+  clear: both;
   padding: 0 15px;
   text-align: justify;
+  max-height: 72px;
+  overflow: auto;
 }
 
 .width-95 {
@@ -570,9 +623,9 @@ h6 {
 }
 
 #info-btn i {
-  position: absolute;
   font-size: 20px;
-  top: 10px;
+  vertical-align: middle;
+  line-height: 1;
 }
 
 .comment-box-wrapper {
@@ -587,14 +640,15 @@ h6 {
 }
 
 .comment-box-wrapper .btn i {
-  position: absolute;
-  left: 30px;
-  top: 12px;
+  vertical-align: middle;
+  /* position: absolute;
+             left: 30px;
+             top: 12px;*/
 }
 
 .comment-box-wrapper .btn i.last {
-  right: 30px;
-  left: auto;
+  /* right: 30px;
+             left:auto; */
 }
 
 .comment-box-wrapper .btn.last {
@@ -777,5 +831,78 @@ h6 {
 .card-deck .card {
   border-radius: 7px;
   border: none;
+}
+
+/**************************************************************/
+/*********************Responsive layout************************/
+/**************************************************************/
+@media (max-width: 1199px) {
+  .lh-50 {
+    line-height: 42px;
+  }
+  .btn-large, .btn-white {
+    padding: 12px 45px;
+  }
+}
+
+@media (max-width: 991px) {
+  .btn-large, .btn-white {
+    padding: 12px 23px;
+  }
+  .top_section .comment-area {
+    padding-bottom: 45px;
+  }
+  .top_section .comment-area .num {
+    font-size: 14px;
+    padding: 7px;
+    width: 32px;
+  }
+  .top_section .comment-area .collapse_icon {
+    bottom: 5px;
+    left: auto;
+    right: 5px;
+    -webkit-transform: none;
+            transform: none;
+  }
+  .top_section .comment-area .sec-col {
+    padding-top: 25px;
+  }
+}
+
+@media (max-width: 767px) {
+  li.tag-button {
+    margin-bottom: 15px;
+  }
+  span.btm_buttons {
+    width: 50%;
+    float: left;
+    padding: 0 10px;
+  }
+  span.btm_buttons .btn {
+    width: 100%;
+    margin-bottom: 10px;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .top_section .top-row .text-right {
+    text-align: left !important;
+  }
+  .top_section .top-row .text-right .btn {
+    float: left;
+    margin: 0 15px 10px 0;
+  }
+  .top_section .top-row .date {
+    font-size: 16px;
+    line-height: 46px;
+  }
+  /***** Progress status ******/
+  .top_content .font-size-20 {
+    font-size: 15px !important;
+  }
+  .top_content .pdd-top-20 {
+    padding-top: 15px !important;
+  }
 }
 /*# sourceMappingURL=style.css.map */

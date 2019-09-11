@@ -364,6 +364,53 @@ h6 {
   line-height: 50px;
 }
 
+/******** Shadow effect *******/
+.shadow_effect{
+  position: relative;
+ 
+  &::before{    
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(rgba(255,255,255,0.5), #fff);
+    height: 20px;
+    z-index: 1;
+    pointer-events: none;
+  }
+  .cmnt_max_height{
+    max-height: 180px;
+    overflow: auto;
+  }
+}
+.box_shadow_effect{
+  position: relative;
+  &::before{    
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(rgba(255,255,255,0.05),rgba(255,255,255,0.5), #fff);
+    height: 70px;
+    z-index: 1;
+    pointer-events: none;
+  }
+  &.no_effect{
+    
+    &::before{
+      display: none; 
+    }
+  }
+}
+.box-height{
+  height: 640px;
+  overflow: auto;
+}
+
+
+
 
 .border-round{border-radius:50%;}
 .orange-border{border:1px solid $orange-color;}
@@ -371,7 +418,14 @@ h6 {
 
 
 .head{padding:17px 0 0 100px;}
-.grid-bg {background:$dashboard-bg;margin-left: 30px;float: left;width: 100%;padding:0 0 10px 70px;}
+.grid-bg {
+  background:$dashboard-bg;
+  /* margin-left: 30px;*/
+  float: left;
+  width: 100%;
+  /* padding:0 0 10px 70px; */
+  padding-bottom:10px;
+}
 .card.m-0 {margin:0}
 .aside-menu-wrapper {
     position: fixed;
@@ -429,7 +483,14 @@ h6 {
   .post-grid{border-left:5px solid $green-color;float: left;width: 100%;padding: 10px; margin: 0 0 10px 0;background: $texwhite;border-top-right-radius: 5px;border-bottom-right-radius: 5px;}
   .muted-text{color:$mutedtext};
   .title-bar{ border-bottom:1px solid #e2f3f9; float:left;width:100%;padding: 5px 0 10px 0;margin: 0 0 5px;font-size:12px;}
-  .post-content{font-size:12px;padding:0 15px; text-align: justify;}
+  .post-content{
+    font-size:12px;
+    clear: both;
+    padding:0 15px;
+    text-align: justify;
+    max-height: 72px;
+    overflow: auto;
+  }
   .width-95{width:93%;}
   .com-head{font-size: 16px;color: #1c3858;margin: 20px 0 20px; padding:0 10px;}
   .breadcrumb{background: #fff;}
@@ -474,10 +535,10 @@ h6 {
    border: 1px solid $primary-color
 }
 #info-btn i
-{
-  position: absolute;
-    font-size: 20px;
-    top: 10px;
+{ 
+  font-size: 20px;
+  vertical-align: middle;
+  line-height: 1;
 }
 .comment-box-wrapper
 {
@@ -485,8 +546,17 @@ h6 {
   float:left;
   width:100%;
     .btn {margin-right:15px;position: relative;
-        i{position: absolute;left: 30px;top: 12px;}
-        i.last{right: 30px;left:auto}} 
+          i{
+            vertical-align: middle;
+            /* position: absolute;
+             left: 30px;
+             top: 12px;*/
+          }
+          i.last{
+            /* right: 30px;
+             left:auto; */
+          }
+        } 
         .btn.last{
             margin-right: 0;
         }
@@ -660,3 +730,86 @@ h6 {
 
 
 
+
+/**************************************************************/
+/*********************Responsive layout************************/
+/**************************************************************/
+@media (max-width:1199px){
+  .lh-50{
+    line-height: 42px;
+  }
+  .btn-large, .btn-white {
+    padding: 12px 45px;
+  }
+}
+@media (max-width: 991px){
+  .btn-large, .btn-white {
+      padding: 12px 23px;
+  }
+  .top_section{
+    .comment-area{    
+      padding-bottom: 45px;
+
+      .num{
+        font-size: 14px;
+        padding: 7px;
+        width: 32px;
+      }
+      .collapse_icon{
+        bottom:5px;
+        left: auto;
+        right: 5px;
+        transform: none;
+      }
+      .sec-col{
+        padding-top:25px;
+      }
+
+    }
+  }
+}
+@media (max-width: 767px){
+    li.tag-button {
+      margin-bottom: 15px;
+    }
+    span.btm_buttons {
+      width: 50%;
+      float: left;
+      padding:0 10px;
+
+      .btn{
+        width: 100%;
+        margin-bottom: 10px;
+        margin-right: 0;
+      }
+    }
+}
+@media (max-width: 576px){
+  
+  .top_section{
+    .top-row{
+      .text-right{
+        text-align: left !important;
+        .btn{
+          float: left;
+          margin: 0 15px 10px 0;
+        }
+      }
+      .date {
+          font-size: 16px;
+          line-height: 46px;
+      }
+    }
+  }
+/***** Progress status ******/
+.top_content{
+  .font-size-20{
+    font-size: 15px !important;
+  }
+  .pdd-top-20 {
+    padding-top: 15px !important;
+  }
+}
+
+
+}
